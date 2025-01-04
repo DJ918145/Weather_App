@@ -1,8 +1,8 @@
-from streamlit import *
+tefrom streamlit import *
 import requests
 
 def weather(state, country):
-    api_key = "cfde88e898c54c4881971054250401"
+    api_key = "API_KEY" # Enter your api key by login weather api
     base_url = "http://api.weatherapi.com/v1/current.json"
     url = f"{base_url}?key={api_key}&q={state},{country}"
     response = requests.get(url)
